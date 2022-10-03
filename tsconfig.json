@@ -29,6 +29,9 @@
       "@constants/*": [
         "src/app/constants/*"
       ],
+      "@environments/*": [
+        "src/environments/*"
+      ],
       "@models/*": [
         "src/app/models/*"
       ],
