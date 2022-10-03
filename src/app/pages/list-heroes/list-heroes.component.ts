@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpErrorResponse } from '@angular/common/http';
 
-import { SuperHeroService } from '@services/super-hero.service';
+import { SuperHeroService } from '@services/api-service/super-hero.service';
 import { SuperHero } from '@models/super-hero.interface';
 
 @Component({
