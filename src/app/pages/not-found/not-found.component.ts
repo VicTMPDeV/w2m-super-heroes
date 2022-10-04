@@ -6,7 +6,15 @@ import { Constants } from '@constants/constants';
 @Component({
   selector: 'app-not-found',
   templateUrl: './not-found.component.html',
-  styleUrls: ['./not-found.component.scss']
+  styles: [`
+    .not-found {
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  `]
 })
 export class NotFoundComponent {
 

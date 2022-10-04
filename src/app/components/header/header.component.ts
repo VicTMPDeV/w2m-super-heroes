@@ -13,7 +13,7 @@ import { NavigationService } from '@services/navigation-service/navigation.servi
 export class HeaderComponent implements OnInit, OnDestroy {
 
   private navServiceSubscription!: Subscription;
-  private readonly mainUrl: string[] = ['/','/list-heroes'];
+  private readonly mainUrl: string[] = [Constants.ROOT,Constants.ROUTE_LISTHEROES];
   public onHomePage!: boolean;
   public CONST = Constants;
   

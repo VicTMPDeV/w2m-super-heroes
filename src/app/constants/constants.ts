@@ -7,10 +7,12 @@ export class Constants {
     //ENDPOINTS
     public static HEROES_ENDPOINT: string = 'heroes';
 
+    //ERRORS
+    public static ERROR: string = '404 Error - Page Not Found OR Check if mockserver is up (execute: npm run mock)\nMessage: ';
+
     //LABELS
     public static DESCRIPTION: string = 'Description: ';
     public static NAVBAR_TITLE: string = 'Angular\'s Super Heroes App';
-    public static ERROR: string = '404 Error - Page Not Found';
     public static ERROR_BACK: string = 'Take me back to';
 
     //NOT-FOUND
@@ -18,6 +20,7 @@ export class Constants {
     public static NOTFOUND_BUTTON_LABEL: string = "Recargar Página";
 
     //ROUTES
+    public static ROOT: string = '/';
     public static ROUTE_LISTHEROES: string = '/list-heroes';
     public static ROUTE_NOT_FOUND: string = 'not-found';
 
