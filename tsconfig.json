@@ -43,6 +43,9 @@
       ],
       "@services/*": [
         "src/app/services/*"
+      ],
+      "@assets/*": [
+        "src/assets/*"
       ]
     }
   },

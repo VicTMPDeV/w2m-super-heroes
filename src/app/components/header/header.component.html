@@ -1,1 +1,13 @@
-<p>header works!</p>
+<mat-toolbar class="mat-toolbar--header" color="primary">
+    <div *ngIf="onHomePage; else onFormPage" class="mat-toolbar--header__items">
+         <a href="https://victormorales.netlify.app/" target="_blank" #link>
+            <img class="mat-toolbar--header__items__logo" [src]="CONST.LOGO_IMAGE"/>
+        </a>
+        <span class="mat-toolbar--header__items__title">{{CONST.NAVBAR_TITLE}}</span>
+    </div>
+    <ng-template #onFormPage class="mat-toolbar--header__items">
+        <button mat-mini-fab class="mat-toolbar--header__items__back" (click)="goBack()">
+            <mat-icon>arrow_back</mat-icon>
+        </button>
+    </ng-template>
+</mat-toolbar>

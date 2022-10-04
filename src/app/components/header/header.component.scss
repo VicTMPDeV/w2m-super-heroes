@@ -1,0 +1,44 @@
+.mat-toolbar--header {
+    display: flex;
+    align-content: stretch;
+    padding: 10px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+    @media screen and (min-width: 480px) {
+        font-size: x-large;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: large;
+        padding-right: 5px;
+    }
+
+    &__items {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+        &__back {
+            margin-bottom: 3px;
+            margin-left: 5px;
+        }
+
+        &__logo {
+            display: flex;
+            width: 50px;
+            margin-bottom: 15px;
+        }
+
+        &__title{
+            margin-left: 10px;
+        }
+
+        &__button {
+            background-color: #033A92;
+        }
+    }
+
+}
