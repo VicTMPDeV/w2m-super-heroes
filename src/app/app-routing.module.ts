@@ -4,7 +4,7 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 const routes: Routes = [
   {
-    path: 'list-heroes',
+    path: 'heroes',
     loadChildren: () => import('@pages/list-heroes/list-heroes.module').then(mod => mod.ListHeroesModule)
   },
   {
@@ -13,7 +13,7 @@ const routes: Routes = [
   },
   {
     path: '', 
-    redirectTo: 'list-heroes', pathMatch: 'full'
+    redirectTo: 'heroes', pathMatch: 'full'
   },
   {
     path: '**',

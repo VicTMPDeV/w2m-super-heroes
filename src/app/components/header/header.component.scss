@@ -24,6 +24,12 @@
         &__back {
             margin-bottom: 3px;
             margin-left: 5px;
+
+            &__arrow {
+                position: relative;
+                bottom: 1px;
+            }
+
         }
 
         &__logo {

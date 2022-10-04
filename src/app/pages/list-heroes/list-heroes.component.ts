@@ -13,7 +13,8 @@ import { Constants } from '@constants/constants';
 })
 export class ListHeroesComponent implements OnInit {
 
-  public heroesList: SuperHero[] = []; 
+  public heroesList: SuperHero[] = [];
+  public CONST = Constants; 
 
   constructor(private _sHService: SuperHeroService,
               private _navService: NavigationService) { }

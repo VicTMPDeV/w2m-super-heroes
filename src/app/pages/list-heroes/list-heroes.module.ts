@@ -2,8 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
+import { CardHeroModule } from '@components/card-hero/card-hero.module';
+import { SpinnerModule } from '@components/spinner/spinner.module';
+
 import { ListHeroesComponent } from './list-heroes.component';
 import { ListHeroesRoutingModule } from './list-heroes-routing.module';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 
 
 @NgModule({
@@ -13,7 +18,11 @@ import { ListHeroesRoutingModule } from './list-heroes-routing.module';
   imports: [
     CommonModule,
     ListHeroesRoutingModule,
-    FlexLayoutModule  
+    FlexLayoutModule,
+    MatButtonModule,
+    MatIconModule,
+    CardHeroModule,
+    SpinnerModule  
   ]
 })
 export class ListHeroesModule { }

@@ -1,0 +1,30 @@
+.heroes-list {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+}
+
+.create-button {
+    position: fixed;
+    bottom: 2vh;
+    right: 1vw;
+    background-color: #e6c47d;
+
+    &__icon {
+        color: black;
+    }
+}
+
+@media (max-width: 480px) {
+    .create-button {
+        position: fixed;
+        bottom: 2.5vh;
+        right: 5vw;
+        background-color: #e6c47d;
+
+        &__icon {
+            color: black;
+        }
+    }
+}

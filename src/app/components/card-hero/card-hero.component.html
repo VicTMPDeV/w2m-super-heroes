@@ -1,0 +1,19 @@
+<mat-card class="mat-card">
+    <mat-card-header class="mat-card__header">
+        <mat-card-title>{{ hero.heroName | truncateText }}</mat-card-title>
+    </mat-card-header>
+    <img class="mat-card__image" mat-card-image [src]="hero | imagePipe">
+    <mat-card-content class="mat-card__content">
+        <p><strong>{{CONST.HERO_NAME}}</strong>{{hero.heroName}}</p>
+        <p><strong>{{CONST.REAL_NAME}}</strong>{{hero.realName}}</p>
+        <p><strong>{{CONST.COMPANY}}</strong>{{hero.company}}</p>
+        <div class="mat-card__edit-button">
+            <button mat-fab color="primary">
+                <mat-icon>edit</mat-icon>
+            </button>
+            <button mat-fab color="warn" (click)="deleteHero()">
+                <mat-icon>delete</mat-icon>
+            </button>
+        </div>
+    </mat-card-content>
+</mat-card>

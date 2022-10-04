@@ -1,1 +1,13 @@
-<p>list-heroes works!</p>
+<div *ngIf="heroesList.length != 0; else noResponseYet">
+    <div class="heroes-list" fxLayoutAlign="center" fxLayoutGap="25px grid" fxLayout="row wrap" fxLayout.lt-md="column">
+        <div *ngFor="let hero of heroesList" fxFlex.lt-md="100" fxFlex="25" fxFlex.gt-lg="20">
+            <app-card-hero [heroData]="hero"></app-card-hero>
+        </div>
+    </div>
+    <button mat-fab class="create-button" routerLink="add">
+        <mat-icon class="create-button__icon">add</mat-icon>
+    </button>
+</div>
+<ng-template #noResponseYet>
+    <app-spinner></app-spinner>
+</ng-template>

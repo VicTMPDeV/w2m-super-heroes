@@ -5,7 +5,18 @@ import { ListHeroesComponent } from './list-heroes.component';
 
 const routes: Routes = [
   {
-    path:'', component: ListHeroesComponent,
+    path: '', component: ListHeroesComponent,
+  },
+  {
+    path: 'add',
+    // loadChildren: () => import().then(mod => mod.)
+  },
+  {
+    path: 'edit/:id',
+    // loadChildren: () => import().then(mod => mod.)
+  },
+  { 
+    path: '**', redirectTo: '', pathMatch: 'full' 
   }
 ];
 

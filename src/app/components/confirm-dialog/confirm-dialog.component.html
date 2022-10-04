@@ -1,0 +1,18 @@
+<div fxLayout="column">
+    <h3>{{CONST.MESSAGE_TITLE}}
+        <h1>
+            <br><strong>{{hero.heroName}}</strong>
+        </h1>
+    </h3>
+    <h3>{{CONST.MESSAGE_QUESTION}}</h3>    
+    <!-- <mat-divider></mat-divider> -->
+    <div class="action-buttons" fxLayout="row">
+        <button mat-fab (click)="delete()" class="delete">
+            {{CONST.MESSAGE_RESPONSE_YES}}
+        </button>
+        <span class="spacer"></span>
+        <button mat-fab (click)="close()" class="no">
+            {{CONST.MESSAGE_RESPONSE_NO}}
+        </button>
+    </div>
+</div>
