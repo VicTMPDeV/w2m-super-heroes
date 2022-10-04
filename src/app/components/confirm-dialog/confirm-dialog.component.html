@@ -5,13 +5,12 @@
         </h1>
     </h3>
     <h3>{{CONST.MESSAGE_QUESTION}}</h3>    
-    <!-- <mat-divider></mat-divider> -->
     <div class="action-buttons" fxLayout="row">
-        <button mat-fab (click)="delete()" class="delete">
+        <button mat-fab (click)="delete()" color="warn">
             {{CONST.MESSAGE_RESPONSE_YES}}
         </button>
         <span class="spacer"></span>
-        <button mat-fab (click)="close()" class="no">
+        <button mat-fab (click)="close()" color="secondary">
             {{CONST.MESSAGE_RESPONSE_NO}}
         </button>
     </div>
